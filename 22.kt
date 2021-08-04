@@ -1,13 +1,13 @@
 fun main() {
-  val obj = B(5, 8, 9, 14)
-  obj.printObjectsAndTheirArithmeticMean()
+  val numValue = B(5, 8, 9, 14)
+  numValue.printNumbersAndTheirArithmeticMean()
 }
-open class A(var obj1:Int, var obj2:Int) {
+open class A(var num1:Int, var num2:Int) {
 }
-class B(var obj3:Int, var obj4:Int, obj1:Int, obj2:Int):A(obj1, obj2){
-    fun printObjectsAndTheirArithmeticMean(){
-        println("Value of objs: ${obj1}, ${obj2}, ${obj3}, ${obj4}")
-        println("Their arithmetic mean: ${(obj1+obj2+obj3+obj4)/4}")
+class B(var num3:Int, var num4:Int, num1:Int, num2:Int):A(num1, num2){
+    fun printNumbersAndTheirArithmeticMean(){
+        println("Value of num: ${num1}, ${num2}, ${num3}, ${num4}")
+        println("Their arithmetic mean: ${(num1+num2+num3+num4)/4}")
 }
 }
 
@@ -17,30 +17,28 @@ class B(var obj3:Int, var obj4:Int, obj1:Int, obj2:Int):A(obj1, obj2){
    //The same with secondary constructors
 /*
 fun main() {
-  val obj = B(9, 11, 7, 3)
-  obj.printObjectsAndTheirArithmeticMean()
+  val numValue = B(5, 9, 7, 3)
+  numValue.printNumbersAndTheirArithmeticMean()
   
                                             
 }
-open class A(){
-    var obj1 = 1
-    var obj2 = 2
-    constructor( obj1:Int, obj2:Int):this(){
-        this.obj1 = obj1
-        this.obj2 = obj2
+open class A{
+    var num1:Int
+    var num2:Int
+    constructor(num1:Int, num2:Int){
+        this.num1 = num1
+        this.num2 = num2
     }
 }
 class B:A{
-    var obj3 = 5
-    var obj4 = 3
-    constructor(obj3:Int, obj4:Int, obj1:Int, obj2:Int):super(obj1, obj2) {
-        this.obj3 = obj3
-        this.obj4 = obj4
+    var num3:Int
+    var num4:Int
+    constructor(num3:Int, num4:Int, num1:Int, num2:Int):super(num1, num2) {
+        this.num3 = num3
+        this.num4 = num4
     }
-    fun printObjectsAndTheirArithmeticMean(){
-        println("Value of objs: ${obj1}, ${obj2}, ${obj3}, ${obj4}")
-        println("Their arithmetic mean: ${(obj1+obj2+obj3+obj4)/4}")
+    fun printNumbersAndTheirArithmeticMean(){
+        println("Value of nums: ${num1}, ${num2}, ${num3}, ${num4}")
+        println("Their arithmetic mean: ${(num1+num2+num3+num4)/4}")
   }
-}*/
-
-
+} */
